@@ -34,8 +34,10 @@ const str = 'abbabcbdbabdbdbabababcbcbab';
 
 function charFreq(str) {
     const map = {};
-    for(let i = 0; i < str.length; i++){
+    for(let i in str){   //let i = 0; i < str.length; i++
       map[str[i]] = (map[str[i]] || 0) + 1;
+    //   console.log([i], map[str[i]]);
+
    };
    return map;
 };
