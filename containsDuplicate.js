@@ -1,17 +1,15 @@
 
-const arr = [1,1,1,3,3,4,3,2,4,2]
+const arr = [2,14,18,22,22]
 
-function containsDuplicate (nums){
-    nums.sort()
+var containsDuplicate = function (nums) {
+    console.log(nums.length)
 
-    for(let i = 0; i < nums.length; i++ ){
-        for (let j = i + 1; i < nums.length; i++){
-            if (i === j){
-                return [i, j] 
-            // } else  
-            //     return [false]
-        }
-    }
-} };
+	const set = new Set([...nums]);
+    // A value in the Set may only occur once; it is unique in the Set's collection. 
+	return set.size != nums.length;
+};
+
 
 console.log(containsDuplicate(arr));
+
+//https://relatablecode.com/javascript-leetcode-contains-duplicate

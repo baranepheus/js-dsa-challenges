@@ -1,7 +1,7 @@
 // Find the longestCommonPrefix 
 // in the given Array.
 
-let arr = ['flow', 'flip', 'flight'];
+let arr = ['fliw', 'flight', 'flap'];
 
 var longestCommonPrefix = function(strs){
 
@@ -13,6 +13,8 @@ var longestCommonPrefix = function(strs){
 
     for(let i = 1; i < strs.length; i++ ){
         while(strs[i].indexOf(prefix) ){
+            // console.log(prefix)
+            // console.log(strs[i])
             prefix = prefix.substring(0, prefix.length - 1)
         }
     }
