@@ -19,6 +19,7 @@ var longestCommonPrefix = function(strs){
         }
     }
     return prefix
+    //let the loop finish
 };
 
 console.log(longestCommonPrefix(arr));
